@@ -5,7 +5,7 @@ tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 # 安装rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# . "$HOME/.cargo/env"
+source $HOME/.cargo/env
 # 安装其他依赖
 apt-get install clang cmake build-essential screen git -y
 # 下载源码
